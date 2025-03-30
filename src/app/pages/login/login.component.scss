@@ -1,0 +1,172 @@
+/* Styling for the card */
+.card {
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 30px;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    box-sizing: border-box;
+    width: 100%; /* Make the card take up full width for smaller screens */
+  }
+  
+  /* Add a subtle hover effect to lift the card */
+  .card:hover {
+    /* transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); */
+  }
+  
+  /* Styling for the card body */
+  .card-body {
+    padding: 0;
+  }
+  
+  /* Title of the card */
+  .card-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Form fields */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .form-control {
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Focus effect for form fields */
+  .form-control:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Error styles for invalid fields */
+  .form-control.ng-touched.ng-invalid {
+    border-color: #dc3545; /* Red border for invalid input */
+  }
+  
+  .text-danger {
+    font-size: 12px;
+    color: #dc3545;
+    margin-top: 5px;
+  }
+  
+  /* Styling for buttons */
+  .btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  /* Hover effect for buttons */
+  .btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+  }
+  
+  /* Disabled button style */
+  .btn:disabled {
+    background-color: #b8daff;
+    border-color: #b8daff;
+    cursor: not-allowed;
+  }
+  
+  /* Link style for navigation */
+  a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Small screen responsiveness */
+  @media (max-width: 600px) {
+    /* Adjust card width for smaller screens */
+    .card {
+      width: 90%;
+      padding: 20px; /* Reduce padding for smaller screens */
+    }
+  
+    /* Adjust form fields and button */
+    .form-control {
+      font-size: 14px; /* Slightly smaller font size for inputs */
+    }
+  
+    .btn {
+      font-size: 14px;
+      padding: 12px; /* Adjust button size for small screens */
+    }
+  
+    /* Adjust card title font size */
+    .card-title {
+      font-size: 20px;
+    }
+  
+    /* Make the links slightly bigger for easier clicking */
+    a {
+      font-size: 16px;
+    }
+  }
+  
+  /* Medium screen responsiveness (tablets or mid-size devices) */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .card {
+      width: 80%; /* Slightly reduce width on medium screens */
+    }
+  
+    .btn {
+      font-size: 15px;
+      padding: 14px;
+    }
+  
+    .form-control {
+      font-size: 15px;
+    }
+  
+    .card-title {
+      font-size: 22px;
+    }
+  }
+  
+  /* Large screens */
+  @media (min-width: 1025px) {
+    .card {
+      width: 50%; /* Card is more narrow on larger screens */
+    }
+  
+    .card-title {
+      font-size: 24px;
+    }
+  }
+  
